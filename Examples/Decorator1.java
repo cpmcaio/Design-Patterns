@@ -52,21 +52,21 @@ public class Decorator1 {
         }
     }
 
-        public static class Chantilly extends AdicionalDecorator {
-            public Chantilly(Cafe cafe) {
-                super(cafe);
-            }
-
-            @Override
-            public double getPreco() {
-                return cafewrapped.getPreco() + 2.00;
-            }
-
-            @Override
-            public String getDescricao() {
-                return cafewrapped.getDescricao() + " ,chantilly";
-            }
+    public static class Chantilly extends AdicionalDecorator {
+        public Chantilly(Cafe cafe) {
+            super(cafe);
         }
+
+        @Override
+        public double getPreco() {
+            return cafewrapped.getPreco() + 2.00;
+        }
+
+        @Override
+        public String getDescricao() {
+            return cafewrapped.getDescricao() + " ,chantilly";
+        }
+    }
 
 
 
