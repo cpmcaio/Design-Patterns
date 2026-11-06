@@ -73,7 +73,6 @@ public class Decorator1 {
     public static void main(String[] args) {
         Cafe cafe = new Chantilly(new Leite(new CafeSimples()));
         System.out.println(cafe.getDescricao() + " = R$ " + cafe.getPreco());
-
     }
 }
     
